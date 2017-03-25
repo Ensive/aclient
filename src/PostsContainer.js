@@ -21,14 +21,9 @@ class PostsContainer extends Component {
 
   }
 
-  handleClick(e) {
-    console.log("click", e);
-    console.log('HELLO WORLD!!')
-  }
-
   render() {
     return (
-      <div className="PostsContainer">
+      <div className='PostsContainer'>
         {posts.map(post => <Post key={post.id} { ...post} />)}
       </div>
     )
