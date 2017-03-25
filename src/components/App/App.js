@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PostsContainer from '../../PostsContainer'
 import Header from '../Header/Header'
-import '../../base.css'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
