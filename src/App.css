@@ -1,9 +1,26 @@
+body {
+  /*padding-bottom: ;*/
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  float: left
+}
+
+nav {
+  float: right;
+
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /*animation: App-logo-spin infinite 20s linear;*/
   height: 80px;
 }
 

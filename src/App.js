@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PostsContainer from './PostsContainer'
-import logo from './logo.svg';
+import Header from './Header'
+import './base.css'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
@@ -13,10 +14,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Blog posts</h2>
-          </div>
+          <Header />
           <h3>The list of posts goes here</h3>
           <PostsContainer />
         </div>

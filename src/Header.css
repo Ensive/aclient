@@ -1,0 +1,32 @@
+.Header {
+    padding: 80px 0;
+}
+
+.Header__link {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    float: left;
+    margin-right: 35px;
+    text-decoration: none;
+    position: relative;
+}
+
+.Header__link::after {
+    content: '';
+    background-color: #5c6bc0;
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+    /*width: 100%;*/
+    display: block;
+    position: absolute;
+    width: 0;
+    transition: 0.3s ease width;
+}
+
+.Header__link:hover::after {
+    width: 100%;
+}

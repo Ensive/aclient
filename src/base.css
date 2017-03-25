@@ -1,0 +1,9 @@
+.u-clear::before,
+.u-clear::after {
+    content: '';
+    display: table;
+}
+
+.u-clear::after {
+    clear: both;
+}
