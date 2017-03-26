@@ -1,3 +1,34 @@
+.Post {
+  /*width: 952px;*/
+  /*height: 587px;*/
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  margin: 0 0 50px;
+  padding: 60px 97px 27px;
+}
+
+.PostName {
+  /*font-family: Lato;*/
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  margin: 0;
+}
+
+.PostBody {
+  font-size: 17px;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
 .PostsContainer {
   text-align: left;
+}
+
+.Divider {
+  background-color: #eee;
+  border: 0;
+  height: 2px;
+  margin: 50px 0 43px;
+  width: 100%;
 }

@@ -1,5 +1,26 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
 body {
+  background-color: #f7f9fc;
+  color: #000;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit;
 }

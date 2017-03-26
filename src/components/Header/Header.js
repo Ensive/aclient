@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import './Header.css'
 
 // const {} = PropTypes
@@ -10,7 +10,7 @@ class Header extends Component {
       <div className='Header u-clear'>
         <h1>PaloAlto</h1>
         <nav>
-          <a className='Header__link' href="#">Home</a>
+          <a className='Header__link Header__link--active' href="#">Home</a>
           <a className='Header__link' href="#">About</a>
           <a className='Header__link' href="#">Archive</a>
           <a className='Header__link' href="#">Contact</a>

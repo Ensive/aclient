@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 import Post from './Post'
 
 import posts from '../data/posts.json'
