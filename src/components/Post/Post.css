@@ -6,11 +6,27 @@
   padding: 60px 95px 80px;
 }
 
+.PostDate,
+.PostName {
+  font-weight: 700;
+}
+
+.PostDate,
+.PostReadingTime {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.PostReadingTime::before {
+  content: '.';
+  margin: 0 5px;
+  position: relative;
+  top: -3.5px;
+}
+
 .PostName {
   font-size: 40px;
-  font-weight: 700;
-  line-height: 50px;
-  margin: 0;
+  margin: 25px 0 0;
 }
 
 .PostBody {

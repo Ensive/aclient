@@ -10,7 +10,7 @@ const propTypes = {
   views: number
 }
 
-function Post({ title, body, author, views }) {
+function Post({ title, body, author, views, readingTime, createdAt }) {
 
   function handleClick() {
     // console.log('Go to read post');
@@ -29,6 +29,8 @@ function Post({ title, body, author, views }) {
   return (
     <article className='Post'>
       <header>
+        <time className='PostDate'>{createdAt}</time>
+        <span className='PostReadingTime'>{readingTime} min read</span>
         <h2 className='PostName'>
           {title}
         </h2>
