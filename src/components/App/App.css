@@ -1,3 +1,15 @@
 .App {
   padding: 0 30px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* for page load */
+.ProgressBar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 52.5%;
+  height: 4px;
+  background-color: #5c6bc0;
 }

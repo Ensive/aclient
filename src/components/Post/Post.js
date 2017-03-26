@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react'
-import Button from './components/Button/Button'
+import Button from '../Button/Button'
 // import Request from './core/request'
 
 const { string, number } = PropTypes

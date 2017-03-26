@@ -1,15 +1,14 @@
+import './Post.css'
+import posts from '../../../data/posts.json'
 import React, { Component } from 'react'
 import Post from './Post'
-
-import posts from '../data/posts.json'
-import './PostsContainer.css'
 
 // const { object, arrayOf } = PropTypes
 // const propTypes = {
 //
 // }
 
-class PostsContainer extends Component {
+class PostList extends Component {
   constructor(props) {
     super();
     // this.state = {
@@ -23,13 +22,13 @@ class PostsContainer extends Component {
 
   render() {
     return (
-      <div className='PostsContainer'>
+      <div className='PostList'>
         {posts.map(post => <Post key={post.id} { ...post} />)}
       </div>
     )
   }
 }
 
-// PostsContainer.propTypes = propTypes
+// PostList.propTypes = propTypes
 
-export default PostsContainer
+export default PostList

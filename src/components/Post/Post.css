@@ -1,14 +1,12 @@
-.Post {
-  /*width: 952px;*/
-  /*height: 587px;*/
+.Post,
+.Card {
   background-color: #fff;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
   margin: 0 0 50px;
-  padding: 60px 97px 27px;
+  padding: 60px 95px 80px;
 }
 
 .PostName {
-  /*font-family: Lato;*/
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -19,10 +17,6 @@
   font-size: 17px;
   line-height: 30px;
   opacity: 0.8;
-}
-
-.PostsContainer {
-  text-align: left;
 }
 
 .Divider {
