@@ -1,5 +1,7 @@
 import React, { PropTypes } from 'react'
 import Button from '../Button/Button'
+// TODO: remove hack
+import postImage from '../../images/post-image-2.jpg'
 // import Request from './core/request'
 
 const { string, number } = PropTypes
@@ -10,7 +12,7 @@ const propTypes = {
   views: number
 }
 
-function Post({ title, body, author, views, readingTime, createdAt }) {
+function Post({ id, title, body, author, views, readingTime, createdAt }) {
 
   function handleClick() {
     // console.log('Go to read post');
@@ -28,32 +30,37 @@ function Post({ title, body, author, views, readingTime, createdAt }) {
 
   return (
     <article className='Post'>
-      <header>
-        <time className='PostDate'>{createdAt}</time>
-        <span className='PostReadingTime'>{readingTime} min read</span>
-        <h2 className='PostName'>
-          {title}
-        </h2>
-      </header>
-      <hr className='Divider'/>
-      <p className='PostBody'>
-        {body}
-      </p>
+      {id === 2 && <img className='PostImage' src={postImage} alt=""/>}
+      <div className='PostContent'>
+        <header>
+          <time className='PostDate'>{createdAt}</time>
+          <span className='PostReadingTime'>{readingTime} min read</span>
+          <h2 className='PostName'>
+            {title}
+          </h2>
+        </header>
+        <hr className='Divider'/>
+        <p className='PostBody'>
+          {body}
+        </p>
 
-      <div>
-        <p><b>Author: </b>{author}</p>
-        <p><b>Views: </b>{views}</p>
+        <div>
+          <p><b>Author: </b>{author}</p>
+          <p><b>Views: </b>{views}</p>
+        </div>
+
+        <footer>
+          <Button
+            // label='Read More'
+            // primary={true}
+            // labelStyle={btnStyle}
+            // disableTouchRipple={true}
+            // hoverColor={'none'}
+            onClick={handleClick}>
+            Read More
+          </Button>
+        </footer>
       </div>
-
-      <Button
-        // label='Read More'
-        // primary={true}
-        // labelStyle={btnStyle}
-        // disableTouchRipple={true}
-        // hoverColor={'none'}
-        onClick={handleClick}>
-        Read More
-      </Button>
     </article>
   )
 }

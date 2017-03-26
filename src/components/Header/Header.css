@@ -1,36 +1,18 @@
 .Header {
-  padding: 80px 0;
+  padding: 75px 0;
 }
 
-.Header__link {
+.HeaderTitle {
   color: #333;
-  display: block;
   float: left;
-  font-size: 16px;
+  font-size: 42px;
+  font-style: italic;
   font-weight: 700;
-  margin-right: 35px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
+  line-height: 36px;
+  margin: 0;
 }
 
-.Header__link--active {
-  color: #bdbdbd;
-  pointer-events: none;
-}
-
-.Header__link::after {
-  background-color: #5c6bc0;
-  bottom: -8px;
-  content: '';
-  display: block;
-  height: 3px;
-  left: 0;
-  position: absolute;
-  transition: 0.3s ease width;
-  width: 0;
-}
-
-.Header__link:hover::after {
-  width: 100%;
+.HeaderNav {
+  float: right;
+  margin: 10px 0 0;
 }

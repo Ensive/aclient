@@ -3,6 +3,15 @@
   background-color: #fff;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
   margin: 0 0 50px;
+}
+
+.PostImage {
+  /* TODO: remove hack */
+  max-height: 530px;
+  width: 100%;
+}
+
+.PostContent {
   padding: 60px 95px 80px;
 }
 
