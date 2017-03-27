@@ -1,7 +1,7 @@
 import './Header.css'
 import './HeaderLink.css'
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
 // const {} = PropTypes
@@ -21,7 +21,7 @@ class Header extends Component {
           <Link className='Header__link' to='#'>Contact</Link>
         </nav>
       </div>
-    );
+    )
   }
 }
 

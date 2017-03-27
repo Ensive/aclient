@@ -9,21 +9,21 @@ import Post from './Post'
 // }
 
 class PostList extends Component {
-  constructor(props) {
-    super();
+  constructor (props) {
+    super()
     // this.state = {
     //   posts: []
     // };
   }
 
-  componentDidMount() {
+  componentDidMount () {
 
   }
 
-  render() {
+  render () {
     return (
       <div className='PostList'>
-        {posts.map(post => <Post key={post.id} { ...post} />)}
+        {posts.map(post => <Post key={post.id} {...post} />)}
       </div>
     )
   }

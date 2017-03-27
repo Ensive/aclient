@@ -14,8 +14,7 @@ const propTypes = {
 }
 
 function Post ({ id, title, body, author, category, tags, views, readingTime, createdAt }) {
-
-  function handleClick() {
+  function handleClick () {
     // console.log('Go to read post');
     // Request.get('/posts/')
     //   .then(function (response) {
@@ -31,7 +30,7 @@ function Post ({ id, title, body, author, category, tags, views, readingTime, cr
 
   return (
     <article className='Post'>
-      {id === 2 && <img className='PostImage' src={postImage} alt=""/>}
+      {id === 2 && <img className='PostImage' src={postImage} alt='' />}
       <div className='PostContent'>
         {category && <a href='#' className='PostCategory'>{category}</a>}
         <header>
@@ -41,14 +40,14 @@ function Post ({ id, title, body, author, category, tags, views, readingTime, cr
             {title}
           </h2>
         </header>
-        <hr className='Divider'/>
+        <hr className='Divider' />
         <p className='PostBody'>
           {body}
         </p>
 
         <div>
-          <p><b>Author: </b>{author}</p>
-          <p><b>Views: </b>{views}</p>
+          <p><span className='text text--bold'>Author: </span>{author}</p>
+          <p><span className='text text--bold'>Views: </span>{views}</p>
         </div>
 
         <footer className='PostFooter'>

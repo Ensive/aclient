@@ -6,7 +6,7 @@ const propTypes = {
   tag: string
 }
 
-function Tag({ tag }) {
+function Tag ({ tag }) {
   return (
     <li className='Tag'>
       <a href='#'>#<span className='TagText'>{tag}</span></a>

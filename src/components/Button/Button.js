@@ -6,8 +6,8 @@ const propTypes = {
   href: string
 }
 
-function Button({ href, children }) {
-  let element;
+function Button ({ href, children }) {
+  let element
 
   if (href) {
     element = <a className='Button' href={href}>{children}</a>

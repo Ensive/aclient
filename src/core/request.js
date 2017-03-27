@@ -28,7 +28,7 @@ export default class Request {
     return this.xhr(route, null, 'put')
   }
 
-  static xhr(route, params = null, verb) {
+  static xhr (route, params = null, verb) {
     let defaults = {
       method: verb,
       credentials: 'include',
@@ -45,8 +45,8 @@ export default class Request {
 
     return fetch(`${route}`, options)
       .then(response => response.json())
-      .catch(function handleError(error) {
+      .catch(function handleError (error) {
         console.log(`Error: ${error}`)
-      });
+      })
   }
 }
