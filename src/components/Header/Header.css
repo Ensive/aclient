@@ -3,13 +3,17 @@
 }
 
 .HeaderTitle {
-  color: #333;
   float: left;
   font-size: 42px;
   font-style: italic;
   font-weight: 700;
   line-height: 36px;
   margin: 0;
+}
+
+.HeaderTitle > a {
+  color: #333;
+  text-decoration: none;
 }
 
 .HeaderNav {

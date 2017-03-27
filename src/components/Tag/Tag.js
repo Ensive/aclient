@@ -7,7 +7,11 @@ const propTypes = {
 }
 
 function Tag({ tag }) {
-  return <li className='Tag'><a href='#'>{tag}</a></li>
+  return (
+    <li className='Tag'>
+      <a href='#'>#<span className='TagText'>{tag}</span></a>
+    </li>
+  )
 }
 
 Tag.propTypes = propTypes

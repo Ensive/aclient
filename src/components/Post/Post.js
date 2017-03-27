@@ -51,7 +51,7 @@ function Post({ id, title, body, author, category, tags, views, readingTime, cre
           <p><b>Views: </b>{views}</p>
         </div>
 
-        <footer className='PostFooter u-clear'>
+        <footer className='PostFooter'>
           <Button
             // label='Read More'
             // primary={true}

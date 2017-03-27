@@ -34,3 +34,7 @@
 .Header__link:hover::after {
   width: 100%;
 }
+
+.Header__link:focus {
+  color: #5c6bc0;
+}

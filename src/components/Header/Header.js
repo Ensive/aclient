@@ -9,7 +9,9 @@ class Header extends Component {
   render() {
     return (
       <div className='Header u-clear'>
-        <h1 className='HeaderTitle'>Palo Alto</h1>
+        <h1 className='HeaderTitle'>
+          <a href='#'>Palo Alto</a>
+        </h1>
         <nav className='HeaderNav'>
           <a className='Header__link Header__link--active' href="#">Home</a>
           <a className='Header__link' href="#">About</a>
