@@ -1,0 +1,13 @@
+.text {
+  color: rgba(0,0,0,.8);
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.text.text--bold {
+  font-weight: bold;
+}
+
+.text.text--normal {
+  font-weight: normal;
+}

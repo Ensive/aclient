@@ -64,12 +64,6 @@
   margin: 25px 0 0;
 }
 
-.PostBody {
-  font-size: 17px;
-  line-height: 30px;
-  opacity: 0.8;
-}
-
 .PostFooter {
   display: flex;
   justify-content: space-between;

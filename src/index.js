@@ -1,6 +1,5 @@
 import '../node_modules/normalize.css/normalize.css'
 import './styles/index.css'
-import './styles/text.css'
 import './styles/utils.css'
 
 import React from 'react'

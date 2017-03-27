@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react'
-import Button from '../Button/Button'
+import Text from '../Text/Text'
 import TagList from '../Tag/TagList'
+import Button from '../Button/Button'
 // TODO: remove hack
 import postImage from '../../images/post-image-2.jpg'
 // import Request from './core/request'
@@ -41,13 +42,11 @@ function Post ({ id, title, body, author, category, tags, views, readingTime, cr
           </h2>
         </header>
         <hr className='Divider' />
-        <p className='PostBody'>
-          {body}
-        </p>
+        <Text text={body} />
 
         <div>
-          <p><span className='text text--bold'>Author: </span>{author}</p>
-          <p><span className='text text--bold'>Views: </span>{views}</p>
+          <Text text='Author: ' textStyle='bold' innerText={author} innerTextStyle='normal' />
+          <Text text='Views: ' textStyle='bold' innerText={views} innerTextStyle='normal' />
         </div>
 
         <footer className='PostFooter'>
