@@ -1,18 +1,19 @@
 .Button {
   background: none;
-  border: 0;
+  border: 1px solid transparent;
   color: #5c6bc0;
   cursor: pointer;
   font-size: 21px;
   font-weight: 700;
-  padding: 0;
+  padding: 20px 35px;
   text-transform: uppercase;
+  transition: .3s ease border-color;
 }
 
-/*.Button:hover {
+.Button:hover {
   border-color: rgba(238, 238, 238, 0.8);
 }
 
 .Button:focus {
   border-color: #5c6bc0;
-}*/
+}

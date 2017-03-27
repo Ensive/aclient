@@ -1,6 +1,7 @@
 .TagList {
   list-style: none;
   flex: 0 1 auto;
+  margin: 20px 0 0;
 }
 
 .Tag {

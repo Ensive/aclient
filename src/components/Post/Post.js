@@ -52,6 +52,7 @@ function Post({ id, title, body, author, category, tags, views, readingTime, cre
         </div>
 
         <footer className='PostFooter'>
+          <TagList tags={tags} />
           <Button
             // label='Read More'
             // primary={true}
@@ -61,7 +62,6 @@ function Post({ id, title, body, author, category, tags, views, readingTime, cre
             onClick={handleClick}>
             Read More
           </Button>
-          <TagList tags={tags} />
         </footer>
       </div>
     </article>
