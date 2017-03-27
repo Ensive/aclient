@@ -1,28 +1,38 @@
 import './Text.css'
-import React from 'react'
+import React, { PropTypes } from 'react'
 
-// helper
+const { string, number, oneOfType } = PropTypes
+const propTypes = {
+  text: string,
+  textStyle: string,
+  innerText: oneOfType([string, number]),
+  innerTextStyle: string
+}
+
+// helper to get CSS class
 function getStyle (style) {
-  switch (style) {
-    case 'bold':
-      return 'text--bold'
-    case 'normal':
-      return 'text--normal'
-    default:
-      return ''
+  const defaultClass = 'Text'
+
+  if (!style) {
+    return defaultClass
+  } else {
+    const otherStyles = style.split(',').map(modifier => `Text--${modifier}`).join(' ')
+    return `${defaultClass} ${otherStyles}`
   }
 }
 
 function Text ({ text, textStyle, innerTextStyle, innerText }) {
-  let outerModifier = getStyle(textStyle)
-  let innerModifier = getStyle(innerTextStyle)
+  let outerClass = getStyle(textStyle)
+  let innerClass = getStyle(innerTextStyle)
 
   return (
-    <p className={outerModifier ? `text ${outerModifier}` : 'text'}>
+    <p className={outerClass}>
       {text}
-      {innerText && <span className={innerModifier ? `text ${innerModifier}` : 'text'}>{innerText}</span>}
+      {innerText && <span className={innerClass}>{innerText}</span>}
     </p>
   )
 }
+
+Text.propTypes = propTypes
 
 export default Text

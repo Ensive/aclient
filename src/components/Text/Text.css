@@ -1,13 +1,15 @@
-.text {
+.Text {
   color: rgba(0,0,0,.8);
   font-size: 17px;
   line-height: 30px;
 }
 
-.text.text--bold {
-  font-weight: bold;
-}
+/* font weight */
+.Text.Text--bold { font-weight: bold; }
+.Text.Text--normal { font-weight: normal; }
 
-.text.text--normal {
-  font-weight: normal;
-}
+/* font-size */
+.Text.Text--small {}
+
+/* margins */
+.Text.Text--tight { margin: 0; }

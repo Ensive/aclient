@@ -6,12 +6,17 @@ import Button from '../Button/Button'
 import postImage from '../../images/post-image-2.jpg'
 // import Request from './core/request'
 
-const { string, number } = PropTypes
+const { string, number, array } = PropTypes
 const propTypes = {
+  id: number,
   title: string,
   body: string,
   author: string,
-  views: number
+  category: string,
+  tags: array,
+  views: number,
+  readingTime: number,
+  createdAt: string
 }
 
 function Post ({ id, title, body, author, category, tags, views, readingTime, createdAt }) {
@@ -45,8 +50,8 @@ function Post ({ id, title, body, author, category, tags, views, readingTime, cr
         <Text text={body} />
 
         <div>
-          <Text text='Author: ' textStyle='bold' innerText={author} innerTextStyle='normal' />
-          <Text text='Views: ' textStyle='bold' innerText={views} innerTextStyle='normal' />
+          <Text text='Author: ' textStyle='bold,tight' innerText={author} innerTextStyle='normal' />
+          <Text text='Views: ' textStyle='bold,tight' innerText={views} innerTextStyle='normal' />
         </div>
 
         <footer className='PostFooter'>
