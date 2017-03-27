@@ -1,0 +1,14 @@
+.TagList {
+  list-style: none;
+}
+
+.Tag {
+  display: inline-block;
+}
+
+.Tag > a {
+  color: #000;
+  opacity: .3;
+  text-decoration: none;
+  font-size: 15px;
+}

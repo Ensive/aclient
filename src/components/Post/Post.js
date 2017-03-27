@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react'
 import Button from '../Button/Button'
+import TagList from '../Tag/TagList'
 // TODO: remove hack
 import postImage from '../../images/post-image-2.jpg'
 // import Request from './core/request'
@@ -12,7 +13,7 @@ const propTypes = {
   views: number
 }
 
-function Post({ id, title, body, author, views, readingTime, createdAt }) {
+function Post({ id, title, body, author, category, tags, views, readingTime, createdAt }) {
 
   function handleClick() {
     // console.log('Go to read post');
@@ -32,6 +33,7 @@ function Post({ id, title, body, author, views, readingTime, createdAt }) {
     <article className='Post'>
       {id === 2 && <img className='PostImage' src={postImage} alt=""/>}
       <div className='PostContent'>
+        {category && <a href='#' className='PostCategory'>{category}</a>}
         <header>
           <time className='PostDate'>{createdAt}</time>
           <span className='PostReadingTime'>{readingTime} min read</span>
@@ -49,7 +51,7 @@ function Post({ id, title, body, author, views, readingTime, createdAt }) {
           <p><b>Views: </b>{views}</p>
         </div>
 
-        <footer>
+        <footer className='PostFooter u-clear'>
           <Button
             // label='Read More'
             // primary={true}
@@ -59,6 +61,7 @@ function Post({ id, title, body, author, views, readingTime, createdAt }) {
             onClick={handleClick}>
             Read More
           </Button>
+          <TagList tags={tags} />
         </footer>
       </div>
     </article>

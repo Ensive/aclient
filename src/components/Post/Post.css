@@ -5,14 +5,40 @@
   margin: 0 0 50px;
 }
 
+.PostCategory {
+  background-color: #5c6bc0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 12px;
+  position: absolute;
+  right: -12px;
+  text-decoration: none;
+  top: 20px;
+  transition: .4s ease transform;
+  backface-visibility: hidden;
+}
+
+.PostCategory:hover {
+  background-color: #6c79c6;
+  transform: scale(1.1);
+}
+
+.PostCategory:focus {
+  background-color: #5360ad;
+  transform: scale(1.1);
+}
+
 .PostImage {
   /* TODO: remove hack */
   max-height: 530px;
   width: 100%;
 }
 
+/* Post container */
 .PostContent {
   padding: 60px 95px 80px;
+  position: relative;
 }
 
 .PostDate,
@@ -42,6 +68,10 @@
   font-size: 17px;
   line-height: 30px;
   opacity: 0.8;
+}
+
+.PostFooter {
+  display: flex;
 }
 
 .Divider {
