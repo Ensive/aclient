@@ -13,7 +13,7 @@ const propTypes = {
   views: number
 }
 
-function Post({ id, title, body, author, category, tags, views, readingTime, createdAt }) {
+function Post ({ id, title, body, author, category, tags, views, readingTime, createdAt }) {
 
   function handleClick() {
     // console.log('Go to read post');

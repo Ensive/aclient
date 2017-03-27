@@ -2,11 +2,11 @@ import 'whatwg-fetch'
 // const baseApiUrl = '/api/v0'
 
 export default class Request {
-  static token() {
-    return '';
+  static token () {
+    return ''
   }
 
-  static headers() {
+  static headers () {
     return {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
@@ -16,16 +16,16 @@ export default class Request {
     }
   }
 
-  static get(route) {
+  static get (route) {
     return this.xhr(route, null, 'get')
   }
 
-  static post(route, params) {
+  static post (route, params) {
     return this.xhr(route, params, 'post')
   }
 
-  static put(route) {
-    return this.xhr(route, null, 'put');
+  static put (route) {
+    return this.xhr(route, null, 'put')
   }
 
   static xhr(route, params = null, verb) {
@@ -46,7 +46,7 @@ export default class Request {
     return fetch(`${route}`, options)
       .then(response => response.json())
       .catch(function handleError(error) {
-        console.log(`Error: ${error}`);
+        console.log(`Error: ${error}`)
       });
   }
 }
