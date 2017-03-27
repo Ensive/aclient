@@ -59,6 +59,7 @@ function Post({ id, title, body, author, category, tags, views, readingTime, cre
             // labelStyle={btnStyle}
             // disableTouchRipple={true}
             // hoverColor={'none'}
+            href='#'
             onClick={handleClick}>
             Read More
           </Button>

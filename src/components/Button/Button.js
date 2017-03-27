@@ -1,12 +1,23 @@
 import './Button.css'
-import React from 'react';
-// const {} = PropTypes
-// const propTypes = {}
+import React, { PropTypes } from 'react'
 
-function Button(props) {
-  return <button className='Button'>{props.children}</button>
+const { string } = PropTypes
+const propTypes = {
+  href: string
 }
 
-// Button.propTypes = propTypes
+function Button({ href, children }) {
+  let element;
+
+  if (href) {
+    element = <a className='Button' href={href}>{children}</a>
+  } else {
+    element = <button className='Button'>{children}</button>
+  }
+
+  return element
+}
+
+Button.propTypes = propTypes
 
 export default Button

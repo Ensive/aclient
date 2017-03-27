@@ -6,6 +6,7 @@
   font-size: 21px;
   font-weight: 700;
   padding: 20px 35px;
+  text-decoration: none;
   text-transform: uppercase;
   transition: .3s ease border-color;
 }
