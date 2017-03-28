@@ -3,19 +3,16 @@ import React, { PropTypes } from 'react'
 
 const { string } = PropTypes
 const propTypes = {
-  href: string
+  href: string,
+  label: string
 }
 
-function Button ({ href, children }) {
-  let element
-
+function Button ({ href, label }) {
   if (href) {
-    element = <a className='Button' href={href}>{children}</a>
+    return <a className='Button' href={href}>{label}</a>
   } else {
-    element = <button className='Button'>{children}</button>
+    return <button className='Button'>{label}</button>
   }
-
-  return element
 }
 
 Button.propTypes = propTypes

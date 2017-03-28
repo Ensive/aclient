@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react'
+import Card from '../Card/Card'
 import Text from '../Text/Text'
 import TagList from '../Tag/TagList'
 import Button from '../Button/Button'
@@ -9,7 +10,7 @@ import postImage from '../../images/post-image-2.jpg'
 const { string, number, array } = PropTypes
 const propTypes = {
   id: number,
-  title: string,
+  title: string.isRequired,
   body: string,
   author: string,
   category: string,
@@ -20,54 +21,31 @@ const propTypes = {
 }
 
 function Post ({ id, title, body, author, category, tags, views, readingTime, createdAt }) {
-  function handleClick () {
-    // console.log('Go to read post');
-    // Request.get('/posts/')
-    //   .then(function (response) {
-    //     console.log(response);
-    //   })
+  const getImage = () => id === 2 && postImage
+  const renderBody = () => <Text text={body} />
 
-    // Request.post('/posts/', { id: 2 })
-    //   .then(function (response) {
-    //     if (!response) return false;
-    //     console.log(response)
-    //   })
+  function renderMeta () {
+    return (
+      <div>
+        <time className='PostDate'>{createdAt}</time>
+        <span className='PostReadingTime'>{readingTime} min read</span>
+        {category && <a href='#' className='PostCategory'>{category}</a>}
+      </div>
+    )
   }
 
   return (
-    <article className='Post'>
-      {id === 2 && <img className='PostImage' src={postImage} alt='' />}
-      <div className='PostContent'>
-        {category && <a href='#' className='PostCategory'>{category}</a>}
-        <header>
-          <time className='PostDate'>{createdAt}</time>
-          <span className='PostReadingTime'>{readingTime} min read</span>
-          <h2 className='PostName'>
-            {title}
-          </h2>
-        </header>
-        <hr className='Divider' />
-        <Text text={body} />
+    <article>
+      <Card img={getImage()} meta={renderMeta()} title={title} body={renderBody()}>
 
-        <div>
-          <Text text='Author: ' textStyle='bold,tight' innerText={author} innerTextStyle='normal' />
-          <Text text='Views: ' textStyle='bold,tight' innerText={views} innerTextStyle='normal' />
-        </div>
+        <Text text='Author: ' textStyle='bold,tight' innerText={author} innerTextStyle='normal' />
+        <Text text='Views: ' textStyle='bold,tight' innerText={views} innerTextStyle='normal' />
 
         <footer className='PostFooter'>
           <TagList tags={tags} />
-          <Button
-            // label='Read More'
-            // primary={true}
-            // labelStyle={btnStyle}
-            // disableTouchRipple={true}
-            // hoverColor={'none'}
-            href='#'
-            onClick={handleClick}>
-            Read More
-          </Button>
+          <Button label='Read More' href='#' />
         </footer>
-      </div>
+      </Card>
     </article>
   )
 }

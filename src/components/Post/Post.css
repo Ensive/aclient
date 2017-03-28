@@ -1,10 +1,3 @@
-.Post,
-.Card {
-  background-color: #fff;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-  margin: 0 0 50px;
-}
-
 .PostCategory {
   background-color: #5c6bc0;
   color: #fff;
@@ -29,18 +22,6 @@
   transform: scale(1.1);
 }
 
-.PostImage {
-  /* TODO: remove hack */
-  max-height: 530px;
-  width: 100%;
-}
-
-/* Post container */
-.PostContent {
-  padding: 60px 95px 60px;
-  position: relative;
-}
-
 .PostDate,
 .PostName {
   font-weight: 700;
@@ -57,11 +38,6 @@
   margin: 0 5px;
   position: relative;
   top: -3.5px;
-}
-
-.PostName {
-  font-size: 40px;
-  margin: 25px 0 0;
 }
 
 .PostFooter {
