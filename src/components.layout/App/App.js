@@ -7,7 +7,7 @@ import Home from '../../components.pages/Home'
 import Single from '../../components.pages/Single'
 import About from '../../components.pages/About'
 import Contact from '../../components.pages/Contact'
-import Header from '../../components/Header/Header'
+import Header from '../Header/Header'
 
 class App extends Component {
   render () {
