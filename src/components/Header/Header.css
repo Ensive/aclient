@@ -4,9 +4,6 @@
 
 .HeaderTitle {
   float: left;
-  font-size: 42px;
-  font-style: italic;
-  font-weight: 700;
   line-height: 36px;
   margin: 0;
 }
@@ -14,6 +11,11 @@
 .HeaderTitle > a {
   color: #333;
   text-decoration: none;
+  transition: .3s ease color;
+}
+
+.HeaderTitle > a:hover {
+  color: #5c6bc0;
 }
 
 .HeaderNav {

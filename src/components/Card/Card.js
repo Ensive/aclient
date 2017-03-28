@@ -7,7 +7,7 @@ const propTypes = {
   img: any,
   meta: element,
   title: string.isRequired,
-  briefText: string,
+  briefText: oneOfType([string, element]),
   body: oneOfType([string, element]),
   children: oneOfType([
     arrayOf(node),

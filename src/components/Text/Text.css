@@ -8,10 +8,11 @@
 .Text.Text--small { font-size: 14px; }
 .Text.Text--medium { font-size: 17px; }
 .Text.Text--large { font-size: 25px; }
+.Text.Text--x-large { font-size: 42px; }
 
 /* weight */
-.Text.Text--bold { font-weight: bold; }
-.Text.Text--normal { font-weight: normal; }
+.Text.Text--bold { font-weight: 700; }
+.Text.Text--normal { font-weight: 400; }
 
 /* colors */
 .Text.Text--gray { color: rgba(0,0,0,.5); }

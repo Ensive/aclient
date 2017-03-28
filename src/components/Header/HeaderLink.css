@@ -14,11 +14,6 @@
   margin: 0;
 }
 
-.Header__link--active {
-  color: #bdbdbd;
-  pointer-events: none;
-}
-
 .Header__link::after {
   background-color: #5c6bc0;
   bottom: -8px;
@@ -37,4 +32,13 @@
 
 .Header__link:focus {
   color: #5c6bc0;
+}
+
+.Header__link--active {
+  color: #bdbdbd;
+  pointer-events: none;
+}
+
+.Header__link--active::after {
+  display: none;
 }
