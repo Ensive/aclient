@@ -1,28 +1,23 @@
 import './Header.css'
-import './HeaderLink.css'
 
-import React, { Component } from 'react'
+import React from 'react'
+import HeaderLink from './HeaderLink'
 import { Link } from 'react-router-dom'
 
-// const {} = PropTypes
-// const propTypes = {}
-
-class Header extends Component {
-  render () {
-    return (
-      <div className='Header u-clear'>
-        <h1 className='HeaderTitle'>
-          <a href='#'>Palo Alto</a>
-        </h1>
-        <nav className='HeaderNav'>
-          <Link className='Header__link' to='/'>Home</Link>
-          <Link className='Header__link' to='/about'>About</Link>
-          <Link className='Header__link' to='#'>Archive</Link>
-          <Link className='Header__link' to='#'>Contact</Link>
-        </nav>
-      </div>
-    )
-  }
+function Header () {
+  return (
+    <div className='Header u-clear'>
+      <h1 className='HeaderTitle'>
+        <Link className='Text Text--x-large Text--bold Text--italic' to='/'>Palo Alto</Link>
+      </h1>
+      <nav className='HeaderNav'>
+        <HeaderLink activeOnlyWhenExact to='/' label='Home' />
+        <HeaderLink to='/about' label='About' />
+        <HeaderLink to='/archive' label='Archive' />
+        <HeaderLink to='/contact' label='Contact' />
+      </nav>
+    </div>
+  )
 }
 
 // Header.propTypes = propTypes

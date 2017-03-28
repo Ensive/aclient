@@ -4,8 +4,9 @@ import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Home from '../../pages/Home'
-import About from '../../pages/About'
 import Single from '../../pages/Single'
+import About from '../../pages/About'
+import Contact from '../../pages/Contact'
 import Header from '../../components/Header/Header'
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path='/about' component={About} />
           <Route path='/posts' component={Home} />
           <Route path='/posts/:id' component={Single} />
+          <Route path='/contact/' component={Contact} />
         </div>
       </Router>
     )

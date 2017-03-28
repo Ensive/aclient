@@ -24,9 +24,14 @@
 /* margins */
 .Text.Text--tight { margin: 0; }
 
+/* line height */
+/* TODO: revisit */
+.Text.Text--spaced {
+  line-height: 38px;
+}
+
 /* advanced customization */
 /* TODO: revisit */
 .Text.Text--emphasized {
   margin: 35px 0 0;
-  line-height: 38px;
 }

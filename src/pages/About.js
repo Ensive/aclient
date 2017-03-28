@@ -6,7 +6,7 @@ function About () {
   function getBriefText () {
     return <Text
       text='Aliquam rhoncus tincidunt dui ut auctor. Maecenas eget purus maximus, commodo sem et, porta nunc. Maecenas lacinia nibh in elementum sagittis.'
-      textStyle='gray,large,italic,emphasized' />
+      textStyle='gray,large,italic,spaced,emphasized' />
   }
 
   function renderBody () {
