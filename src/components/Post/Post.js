@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 import Card from '../Card/Card'
 import Text from '../Text/Text'
 import TagList from '../Tag/TagList'
-import Button from '../Button/Button'
+import Button from '../../components.forms/Button/Button'
 // TODO: remove hack
 import postImage from '../../images/post-image-2.jpg'
 // import Request from './core/request'
