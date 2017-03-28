@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../components.common/Card/Card'
 import Text from '../components.common/Text/Text'
+import ContactForm from '../components.forms/ContactForm/ContactForm'
 
 function Contact () {
   // TODO: refactor out the function as a helper
@@ -10,7 +11,7 @@ function Contact () {
       textStyle='emphasized' />
   }
 
-  return <Card title='Contact Us' briefText={getBriefText()} body={''} />
+  return <Card title='Contact Us' briefText={getBriefText()} body={<ContactForm />} />
 }
 
 export default Contact

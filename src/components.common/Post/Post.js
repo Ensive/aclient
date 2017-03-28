@@ -42,8 +42,8 @@ function Post ({ id, title, body, author, category, tags, views, readingTime, cr
         <Text text='Views: ' textStyle='bold,tight' innerText={views} innerTextStyle='normal' />
 
         <footer className='PostFooter'>
-          <TagList tags={tags} />
           <Button label='Read More' href='#' />
+          <TagList tags={tags} />
         </footer>
       </Card>
     </article>

@@ -1,0 +1,33 @@
+/* TODO: revisit */
+.TextBoxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.TextBox {
+  background-color: #f7f9fc;
+  border: 2px solid #f7f9fc;
+  color: rgba(0,0,0,.3);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 30px;
+  padding: 15px 20px 15px 30px;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.TextBox:first-child {
+  margin-right: 30px;
+}
+
+.TextBox:focus {
+  border: 2px solid #5c6bc0;
+  outline: 0;
+}
+
+.TextBox.TextBox--area {
+  resize: vertical;
+}
