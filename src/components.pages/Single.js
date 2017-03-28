@@ -1,12 +1,8 @@
 import React from 'react'
-import Post from '../components/Post/Post'
+import Post from '../components.common/Post/Post'
 
 function Single () {
-  return (
-    <div>
-      <Post />
-    </div>
-  )
+  return <Post />
 }
 
 export default Single

@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from '../components/Card/Card'
-import Text from '../components/Text/Text'
+import Card from '../components.common/Card/Card'
+import Text from '../components.common/Text/Text'
 
 function About () {
   function getBriefText () {
