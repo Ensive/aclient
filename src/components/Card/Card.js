@@ -22,6 +22,7 @@ function Card ({ img, meta, title, briefText, body, children }) {
       <div className='CardContent'>
         <header>
           {meta}
+          {/* TODO: consider to make it h1 for some cases */}
           <h2 className='CardTitle'>{title}</h2>
         </header>
         {briefText}

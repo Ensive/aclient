@@ -4,12 +4,28 @@
   line-height: 30px;
 }
 
-/* font weight */
+/* size */
+.Text.Text--small { font-size: 14px; }
+.Text.Text--medium { font-size: 17px; }
+.Text.Text--large { font-size: 25px; }
+
+/* weight */
 .Text.Text--bold { font-weight: bold; }
 .Text.Text--normal { font-weight: normal; }
 
-/* font-size */
-.Text.Text--small {}
+/* colors */
+.Text.Text--gray { color: rgba(0,0,0,.5); }
+.Text.Text--lightgray {}
+
+/* style */
+.Text.Text--italic { font-style: italic; }
 
 /* margins */
 .Text.Text--tight { margin: 0; }
+
+/* advanced customization */
+/* TODO: revisit */
+.Text.Text--emphasized {
+  margin: 35px 0 0;
+  line-height: 38px;
+}
