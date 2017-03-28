@@ -1,4 +1,4 @@
-import '../node_modules/normalize.css/normalize.css'
+import '../node_modules/reset-css/reset.css'
 import './styles/index.css'
 import './styles/utils.css'
 
