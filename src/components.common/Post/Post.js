@@ -42,7 +42,7 @@ function Post ({ id, title, body, author, category, tags, views, readingTime, cr
         <Text text='Views: ' textStyle='bold,tight' innerText={views} innerTextStyle='normal' />
 
         <footer className='PostFooter'>
-          <Button label='Read More' href='#' />
+          <Button label='Read More' to={`/posts/${id}`} />
           <TagList tags={tags} />
         </footer>
       </Card>

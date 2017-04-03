@@ -1,15 +1,16 @@
 import './Button.css'
 import React, { PropTypes } from 'react'
+import { Link } from 'react-router-dom'
 
 const { string } = PropTypes
 const propTypes = {
-  href: string,
+  to: string,
   label: string
 }
 
-function Button ({ href, label }) {
-  if (href) {
-    return <a className='Button' href={href}>{label}</a>
+function Button ({ to, label }) {
+  if (to) {
+    return <Link className='Button' to={to}>{label}</Link>
   } else {
     return <button className='Button'>{label}</button>
   }
